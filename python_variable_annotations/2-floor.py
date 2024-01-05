@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-type-annotations Concat
+type-annotations Floor
 """
-from math import floor
+from math import floor as fl
 
 
-def floor_function(n: float) -> int:
+def floor(n: float) -> int:
     """
     Args:
         n (float): float number
@@ -13,5 +13,5 @@ def floor_function(n: float) -> int:
     Returns:
         int: int number
     """
-    r: int = floor(n)
+    r: int = fl(n)
     return r
