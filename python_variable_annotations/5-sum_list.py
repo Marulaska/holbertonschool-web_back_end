@@ -5,7 +5,6 @@ type-annotations Floor
 from typing import List
 
 
-
 def sum_list(input_list: List[float]) -> float:
     """
 
