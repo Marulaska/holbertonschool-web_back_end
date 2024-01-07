@@ -15,5 +15,5 @@ def to_kv(k: str, v: Union[int, float]) -> Tuple[str, Union[float]]:
     Returns:
         Dict:[str, Union[float]]
     """
-    r: Dict[str, Union[int, float]] = {k: v**2}
+    r: Tuple[str, Union[int, float]] = {k: v**2}
     return r
