@@ -35,6 +35,14 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """
+        Args:
+            page (int): page number. Defaults to 1.
+            page_size (int): page size. Defaults to 10.
+
+        Returns:
+            List[List]: subset of the file
+        """
         assert type(page) == int
         assert type(page_size) == int
         assert int(page) > 0
