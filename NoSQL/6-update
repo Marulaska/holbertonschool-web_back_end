@@ -1,6 +1,6 @@
 // adds a new attribute
 
-db.school.update(
+db.school.updateMany(
     {
         name : "Holberton school"
     },
