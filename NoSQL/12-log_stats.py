@@ -5,7 +5,9 @@ provides some stats about Nginx logs stored in MongoDB
 from pymongo import MongoClient
 
 
-if __name__ == "__main__":
+def print_stats():
+    """_summary_
+    """
     client = MongoClient('mongodb://127.0.0.1:27017')
     logs = client.logs.nginx
     print(str(logs.count_documents({})) + " logs")
@@ -17,3 +19,6 @@ if __name__ == "__main__":
           + str(logs.count_documents({"method": "DELETE"})))
     print(str(logs.count_documents({"method": "GET", "path": "/status"}))
           + " status check")
+
+
+print_stats()
